@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
-    <title>Heroic Features - Start Bootstrap Template</title>
+    <title>4 - 20mA Calculator</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
     <!-- Bootstrap icons-->
@@ -20,17 +20,17 @@
         <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
             <div class="m-4 m-lg-5">
                 <h1 class="display-5 fw-bold">4 - 20mA Converter</h1>
-                <p class="fs-4">Bootstrap utility classes are used to create this jumbotron since the old component has
-                    been removed from the framework. Why create custom CSS when you can use utilities?</p>
+                <p class="fs-4">This is a handy tool to quickly convert a 4-20mA signal to a defined value range.
+                    <br>Enter a value below in either of the two boxes to convert it </p>
 
             </div>
-            <div style="margin: 1rem" class="fs-4 row">
-                <div class="col-6 row">
-                    <input style="margin-top: 1rem; margin-bottom: 1rem" id="rawVal" class="col-sm-10" value="12">
+            <div style="margin: 1rem" class="fs-4 row col-12 text-center">
+                <div class="col-sm-6 row">
+                    <input type="number" style="margin-top: 1rem; margin-bottom: 1rem" id="rawVal" class="col-sm-10" value="12">
                     <label style="margin-top: 1rem; margin-bottom: 1rem" for="rawVal" class="col-sm-2">mA</label>
                 </div>
-                <div class="col-6 row">
-                    <input style="margin-top: 1rem; margin-bottom: 1rem" id="sigVal" class="col-sm-10" value="50">
+                <div class="col-sm-6 row">
+                    <input type="number" style="margin-top: 1rem; margin-bottom: 1rem" id="sigVal" class="col-sm-10" value="50">
                     <label style="margin-top: 1rem; margin-bottom: 1rem" for="sigVal" class="col-sm-2">Hz</label>
                 </div>
             </div>
@@ -48,13 +48,12 @@
                 <div class="card bg-light border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                         <h2 class="fs-4 fw-bold">4 - 20mA range</h2>
-                        <p class="mb-0">With Bootstrap 5, we've created a fresh new layout for this template!</p>
-                        <div class="fs-5 row" style="padding: 1rem">
-                            <input class="col-5" style="margin-top: 0.5rem; margin-bottom: 0.5rem" value="4">
+                        <p class="mb-0">Enter the low and high values of mA signal below <br>(low on the left, high on the right)</p>
+                        <div class="fs-5 row container" style="padding: 1rem">
+                            <input type="number" class="col-5" style="margin-top: 0.5rem; margin-bottom: 0.5rem" value="4" id="maMin">
                             <p class="col-2" style="margin-top: auto;"><strong>-</strong></p>
-                            <input class="col-5" style="margin-top: 0.5rem; margin-bottom: 0.5rem" value = "20">
+                            <input type="number" class="col-5" style="margin-top: 0.5rem; margin-bottom: 0.5rem" value = "20" id="maMax">
                         </div>
-                        <a class="btn btn-primary btn-lg" href="#!">Update</a>
                     </div>
                 </div>
             </div>
@@ -62,13 +61,12 @@
                 <div class="card bg-light border-0 h-100">
                     <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                         <h2 class="fs-4 fw-bold">Signal Value</h2>
-                        <p class="mb-0">As always, Start Bootstrap has a powerful collectin of free templates.</p>
+                        <p class="mb-0">Enter the low and high values of the physical signal below <br>(low on the left, high on the right)</p>
                         <div class="fs-5 row" style="padding: 1rem">
-                            <input class="col-5" style="margin-top: 0.5rem; margin-bottom: 0.5rem" value="0">
+                            <input type="number" class="col-5" style="margin-top: 0.5rem; margin-bottom: 0.5rem" value="0" id="sigMin">
                             <p class="col-2" style="margin-top: auto;"><strong>-</strong></p>
-                            <input class="col-5" style="margin-top: 0.5rem; margin-bottom: 0.5rem" value = "100">
+                            <input type="number" class="col-5" style="margin-top: 0.5rem; margin-bottom: 0.5rem" value = "100" id="sigMax">
                         </div>
-                        <a class="btn btn-primary btn-lg" href="#!">Update</a>
                     </div>
                 </div>
             </div>
@@ -77,7 +75,8 @@
 </section>
 <!-- Footer-->
 <footer class="py-5 bg-dark">
-    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
+    <div class="container"><p class="m-0 text-center text-white">Developed by Andy Mitchell
+        <br>2021</p></div>
 </footer>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
