@@ -7,7 +7,7 @@ Built as part of a learning project to practise Javascript learned in the Coding
 
 You can get started by cloning the project to your local machine:
 ```
-$ git clone https://github.com/amitchell94/js-tictactoe.git
+$ git clone https://github.com/amitchell94/4-20ma-converter.git
 ```
 
 ### Prerequisites
